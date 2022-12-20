@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Flashing Colors</title>
+  </head>
+  <body>
+    <h1>Welcome to my flashing colors webpage!</h1>
+    <script>
+      // Array of colors to use for the flashing effect
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+// Function to change the background color of the body element
+function changeColor() {
+  // Get the body element
+  const body = document.querySelector('body');
+
+  // Choose a random color from the array
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
+  // Set the background color of the body element to the chosen color
+  body.style.backgroundColor = color;
+}
+
+// Set an interval to change the color every 500 milliseconds (half a second)
+setInterval(changeColor, 500);
+
+    </script>
+    <video src="https://i.imgur.com/PZDDRcL.mp4" controls></video>
+  </body>
+</html>
